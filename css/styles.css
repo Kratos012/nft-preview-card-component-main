@@ -1,0 +1,154 @@
+*, *::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 320px;
+}
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: 1.4rem;
+  padding: 20px 0;
+}
+h1:hover {
+  color: hsl(178, 100%, 50%);
+}
+p {
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+span {
+  color: hsl(178, 100%, 50%);
+  padding-left: 7px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+hr {
+  border-color: hsl(215, 32%, 27%);
+  border-style: solid none none;
+}
+img {
+  display: block;
+}
+
+.NFT-card {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 20px;
+  /* position: relative; */
+  width: 100%;
+  padding: 20px;
+  box-shadow: -3px 26px 42px 12px rgba(0, 0, 0, 0.77);
+  box-shadow: -3px 26px 42px 12px rgba(0, 0, 0, 0.77);
+}
+
+/* NFT Image */
+.image-holder {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.image-icon {
+  border-radius: 10px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: hsla(178, 100%, 50%, 0.4);
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+.card-images:hover .image-icon {
+  opacity: 1;
+}
+
+/* Text/Body section */
+.currency-bar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid hsla(215, 51%, 70%, 0.15);
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+.paragraph {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.8;
+  padding-bottom: 15px
+}
+
+.ETH-currency {
+  display: flex;
+  align-items: center;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+}
+
+
+.days {
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+
+}
+
+/* Bottom Container */
+.bottom-container {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  width: 2.25rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  float: left;
+  margin-right: 20px
+}
+.author {
+  font-size: 1rem;
+}
+
+.creator-name {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+.creator-name:hover {
+  color: hsl(178, 100%, 50%);
+}
